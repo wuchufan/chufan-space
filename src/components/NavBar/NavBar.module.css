@@ -1,0 +1,14 @@
+.NavBar{
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  position:fixed;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  height:72px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+
+}

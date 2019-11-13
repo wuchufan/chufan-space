@@ -1,0 +1,19 @@
+.NavBarItem{
+  display:flex;
+  align-items: center;
+  box-sizing: border-box;
+  height:100%;
+}
+.NavBarItem a{
+  padding: 25px 20px;
+  height:100%;
+  color:white;
+  text-decoration: none;
+  box-sizing: border-box;
+  display:block;
+}
+.NavBarItem a:hover,
+.NavBarItem a.active{
+  background-color:grey;
+  border-bottom: 4px solid lightgreen;
+}
