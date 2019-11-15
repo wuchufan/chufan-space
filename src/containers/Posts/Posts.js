@@ -7,11 +7,15 @@ import axios from '../../axios-instance';
 class Posts extends Component{
 
     state={
-      posts:[]
+      posts:null,
+      error:null
+    }
+    newPostActionHandler=()=>{
+      this.props.history.push({
+        pathname:'/createpost'});
     }
 
     componentDidMount(){
-      console.log(this.props);
       axios.get('/posts.json')
       .then((response)=>{
 
@@ -20,16 +24,23 @@ class Posts extends Component{
           fetchedPosts.push({...response.data[fetchedPost], key:fetchedPost});
         }
         this.setState({posts:fetchedPosts});
+      })
+      .catch((error)=>{
+        this.setState({error:error});
       });
     }
   render(){
+    let posts = this.state.error ? <p className={classes.Loading}>Posts cannot be loaded</p> : <p className={classes.Loading}>Posts are loading...</p>;
+    if (this.state.posts){
+      posts = (this.state.posts.map(post=>(
+        <Post title={post.title} content={post.content} key={post.content}/>)
+      ));
+    }
     return(
       <div>
-        {this.state.posts.map(post=>(
-          <Post title={post.title} content={post.content} key={post.content}/>)
-        )}
+        {posts}
       <div className={classes.Posts}>
-        <Button>New Post</Button>
+        <Button action={this.newPostActionHandler}>New Post</Button>
       </div>
 
       </div>

@@ -6,7 +6,7 @@ class HomePage extends Component{
 
     return(
       <h1>
-        This is Home Page
+        This is Home Page. Great Master is currently working hard on expanding this universe.
       </h1>
     );
   }
