@@ -9,6 +9,12 @@
   transition:all .2s;
 }
 
+.btn:hover{
+  transform:translateY(-5px);
+  box-shadow: 0 2px 10px grey;
+}
+
 .btn:active{
-  transform:translateY(-10px);
+  transform:translateY(2px);
+  box-shadow:0 1px 4px grey;
 }
