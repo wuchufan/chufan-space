@@ -3,6 +3,7 @@ import Post from '../../components/Post/Post';
 import classes from './Posts.module.css';
 import Button from '../../components/UI/Button/Button';
 import axios from '../../axios-instance';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class Posts extends Component{
 
@@ -26,7 +27,8 @@ class Posts extends Component{
         this.setState({posts:fetchedPosts});
       })
       .catch((error)=>{
-        this.setState({error:error});
+        console.log(error);
+        this.setState({error:true});
       });
     }
   render(){
@@ -39,8 +41,8 @@ class Posts extends Component{
     return(
       <div>
         {posts}
-      <div className={classes.Posts}>
-        <Button action={this.newPostActionHandler}>New Post</Button>
+        <div className={classes.Posts}>
+          <Button action={this.newPostActionHandler}>New Post</Button>
       </div>
 
       </div>
@@ -50,4 +52,4 @@ class Posts extends Component{
   }
 }
 
-export default Posts;
+export default withErrorHandler(Posts,axios);
