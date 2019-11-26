@@ -1,5 +1,11 @@
 .NavBrand{
   color:white;
+  font-size: 30px;
+  position:absolute;
+  top:15px;
+  left:20px;
+  display:block;
+  align-items:center;
   text-decoration: none;
-  padding-left:40px
+  box-sizing:border-box;
 }

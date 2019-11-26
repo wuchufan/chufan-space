@@ -5,9 +5,10 @@ import {NavLink} from 'react-router-dom';
 const navBrand=(props)=>{
   return(
     <div>
-      <h1><NavLink
+
+      <NavLink
         to={props.link}
-        className={classes.NavBrand}>Welcome</NavLink></h1>
+        className={classes.NavBrand}>Chufan Wu</NavLink>
 
       </div>
   );
