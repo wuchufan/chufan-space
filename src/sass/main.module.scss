@@ -1,4 +1,6 @@
 
+
+//Base
 @import 'base/base.module.scss';
 
 //Components
@@ -10,8 +12,11 @@
 
 @import '../components/Post/Post.module.scss';
 
-
-
 @import '../components/UI/Model/Model.module.scss';
 @import '../components/UI/Input/Input.module.scss';
 @import '../components/UI/Button/Button.module.scss';
+
+//Pages
+@import 'pages/createPost.module.scss';
+@import 'pages/homePage.module.scss';
+@import 'pages/posts.module.scss';

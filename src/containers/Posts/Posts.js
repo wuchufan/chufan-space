@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Post from '../../components/Post/Post';
-import classes from './Posts.module.css';
+import classes from '../../sass/main.module.scss';
 import Button from '../../components/UI/Button/Button';
 import axios from '../../axios-instance';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';

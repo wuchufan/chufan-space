@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
-import classes from './CreatePost.module.css';
+import classes from '../../sass/main.module.scss';
 import axios from '../../axios-instance';
 import Aux from '../../hoc/Aux/Aux';
 
