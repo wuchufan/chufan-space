@@ -1,7 +1,13 @@
 .Post{
   border-radius: 10px;
   text-align: center;
+  padding: 20px;
   width:70%;
-  margin:auto;
   box-shadow: 0 2px 4px grey;
+
+
+  &:not(:last-child){
+    margin: 0 auto 20px;
+
+  }
 }

@@ -1,7 +1,12 @@
 
+//Abstract
+@import 'abstracts/variables.module.scss';
 
 //Base
 @import 'base/base.module.scss';
+
+//Typography
+@import 'base/typography.module.scss';
 
 //Components
 
@@ -17,6 +22,6 @@
 @import '../components/UI/Button/Button.module.scss';
 
 //Pages
-@import 'pages/createPost.module.scss';
-@import 'pages/homePage.module.scss';
-@import 'pages/posts.module.scss';
+@import '../containers/CreatePost/CreatePost.module.scss';
+@import '../containers/HomePage/HomePage.module.scss';
+@import '../containers/Posts/Posts.module.scss';
