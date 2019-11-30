@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './NavBarItem.module.css';
+import classes from '../../../../sass/main.module.scss';
 import {NavLink} from 'react-router-dom';
 
 const navBarItem=(props)=>{

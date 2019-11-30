@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBarItem from './NavBarItem/NavBarItem';
-import classes from './NavBarItems.module.css';
+import classes from '../../../sass/main.module.scss';
 
 const navBarItems=(props)=>{
   return(

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes from './Layout.module.css';
+import classes from '../../sass/main.module.scss';
 import NavBar from '../../components/NavBar/NavBar';
 import Aux from '../Aux/Aux';
 
