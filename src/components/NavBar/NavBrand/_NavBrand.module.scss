@@ -1,12 +1,18 @@
-.NavBrand{
-  color:white;
-  font-size: 3rem;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:2rem;
-  display:block;
-  align-items:center;
-  text-decoration: none;
-  
+.nav-brand{
+  position:relative;
+  background-color: $color-black;
+  border-right:$bars-border;
+  height:100%;
+  width:$side-bar-width;
+  text-align: center;
+  &__link{
+    display:inline-block;
+    margin-top:calc(#{$nav-bar-height}/4);
+    font-size: 2.3rem;
+    &:link,
+    &:visited{
+      color:$color-white;
+      text-decoration: none;
+    }
+  }
 }

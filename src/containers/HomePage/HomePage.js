@@ -9,13 +9,15 @@ class HomePage extends Component{
 
     return(
       <Aux>
-        <h1 className={classes['heading-primary']}>
-          This is your Home Page.
-        </h1>
-        <h1 className={classes['heading-primary']}>
-          The Great Master is currently working hard on expanding this universe.
-        </h1>
-        <GridTest/>
+        <div className={classes['row']}>
+          <h1 className={classes['heading-primary']}>
+            This is your Home Page.
+          </h1>
+          <h1 className={classes['heading-primary']}>
+            The Great Master is currently working hard on expanding this universe.
+          </h1>
+          <GridTest/>
+        </div>
       </Aux>
 
     );

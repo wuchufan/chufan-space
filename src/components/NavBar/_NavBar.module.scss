@@ -1,14 +1,13 @@
 .NavBar{
-  background-color: black;
-  color:white;
+  background-color: $color-black;
   font-weight: bold;
   position:fixed;
   top:0;
   left:0;
-  box-sizing: border-box;
-  height:7.2rem;
+  height:$nav-bar-height;
   width:100%;
   display:flex;
+  border-bottom:$bars-border;
   justify-content: space-between;
 
 }

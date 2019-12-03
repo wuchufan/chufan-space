@@ -6,11 +6,13 @@ import classes from '../../sass/main.module.scss';
 class NavBar extends Component {
   render(){
     return(
+      <React.Fragment>
+
         <nav className={classes.NavBar}>
           <NavBrand link='/'/>
           <NavBarItems/>
         </nav>
-
+      </React.Fragment>
     );
   }
 }

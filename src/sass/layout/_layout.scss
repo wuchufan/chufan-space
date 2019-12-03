@@ -1,0 +1,13 @@
+.main{
+  margin-top:$nav-bar-height;
+  position:relative;
+
+  &__content{
+  margin-left:$side-bar-width;
+  padding:5rem;
+  width:calc(100% - #{$side-bar-width});
+
+  }
+
+
+}

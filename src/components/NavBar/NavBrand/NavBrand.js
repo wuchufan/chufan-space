@@ -4,10 +4,9 @@ import {NavLink} from 'react-router-dom';
 
 const navBrand=(props)=>{
   return(
-    <div>
+    <div className={classes['nav-brand']}>
       <NavLink
-        to={props.link}
-        className={classes.NavBrand}>Chufan Wu</NavLink>
+        to={props.link} className={classes['nav-brand__link']}>Chufan</NavLink>
     </div>
   );
 
