@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Aux from '../../hoc/Aux/Aux';
+import GridTest from '../../components/GridTest';
 import classes from '../../sass/main.module.scss';
 
 class HomePage extends Component{
@@ -14,6 +15,7 @@ class HomePage extends Component{
         <h1 className={classes['heading-primary']}>
           The Great Master is currently working hard on expanding this universe.
         </h1>
+        <GridTest/>
       </Aux>
 
     );

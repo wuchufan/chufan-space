@@ -1,12 +1,16 @@
 
-//Abstract
+//Variables
 @import 'abstracts/variables.module.scss';
+
+//Mixins
+@import 'abstracts/mixins.module.scss';
 
 //Base
 @import 'base/base.module.scss';
 
 //Typography
 @import 'base/typography.module.scss';
+
 
 //Components
 
@@ -25,3 +29,6 @@
 @import '../containers/CreatePost/CreatePost.module.scss';
 @import '../containers/HomePage/HomePage.module.scss';
 @import '../containers/Posts/Posts.module.scss';
+
+//layout
+@import 'layout/grid.scss';
