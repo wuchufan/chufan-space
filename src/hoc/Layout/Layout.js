@@ -12,7 +12,6 @@ class Layout extends Component {
       <NavBar/>
 
       <main className={classes['main']}>
-        
         <SideBar/>
         <div className={classes['main__pages']}>
           {this.props.children}
