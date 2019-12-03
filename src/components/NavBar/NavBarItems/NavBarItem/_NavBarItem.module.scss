@@ -5,7 +5,7 @@
   height:100%;
 }
 .NavBarItem a{
-  padding: 25px 20px;
+  padding: 2.5rem 2rem;
   height:100%;
   color:white;
   text-decoration: none;
@@ -15,5 +15,5 @@
 .NavBarItem a:hover,
 .NavBarItem a.active{
   background-color:grey;
-  border-bottom: 4px solid lightgreen;
+  border-bottom: .4rem solid lightgreen;
 }
