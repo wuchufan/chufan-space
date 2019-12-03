@@ -4,36 +4,23 @@ import NavBar from '../../components/NavBar/NavBar';
 import SideBar from '../../components/SideBar/SideBar';
 import Aux from '../Aux/Aux';
 
-
-
 class Layout extends Component {
 
+  render() {
+    return (<Aux>
 
-  render(){
-    return(
-      <Aux>
+      <NavBar/>
 
-        <NavBar/>
+      <main className={classes['main']}>
+        
+        <SideBar/>
+        <div className={classes['main__pages']}>
+          {this.props.children}
+        </div>
 
+      </main>
 
-
-        <main className={classes['main']}>
-
-          <SideBar/>
-          <div className={classes['main__content']}>
-
-            {this.props.children}
-
-          </div>
-
-
-        </main>
-
-
-
-      </Aux>
-
-    );
+    </Aux>);
   }
 }
 

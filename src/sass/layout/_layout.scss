@@ -1,10 +1,13 @@
 .main{
   margin-top:$nav-bar-height;
+  background-color: $color-grey-light-2;
   position:relative;
+  @include clearfix;
 
-  &__content{
-  margin-left:$side-bar-width;
+  &__pages{
+  float:left;
   padding:5rem;
+  // margin-left: $side-bar-width;
   width:calc(100% - #{$side-bar-width});
 
   }

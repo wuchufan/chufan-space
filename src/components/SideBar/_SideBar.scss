@@ -1,7 +1,8 @@
 .side-bar{
-  position:fixed;
-  left:0;
-  height:100vh;
+  position:sticky;
+  float:left;
+  top:$nav-bar-height;
+  height:calc(100vh - #{$nav-bar-height});
   background-color: $color-grey-dark;
   border-right:$bars-border;
   width:$side-bar-width;
