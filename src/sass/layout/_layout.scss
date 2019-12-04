@@ -2,18 +2,29 @@
   // margin-top:$nav-bar-height;
   background-color: $color-grey-light-2;
   position:relative;
-  @include clearfix;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  // @include clearfix;
 
   &__container{
-  float:left;
   padding:4rem 3.5rem;
-  width:calc(100% - #{$side-bar-width});
+  transition: all 1s ease;
+
+  &--width-medium{
+    opacity:1;
+    width:calc(100% - #{$side-bar-width-medium});
+  }
+  &--width-small{
+    opacity:1;
+  width:calc(100% - #{$side-bar-width-small});
+  }
 
   }
 
   &__content{
     min-height: 100vh;
-
+    // transition:all 1s ease;
   }
 
 

@@ -3,25 +3,9 @@ import classes from '../../sass/main.module.scss';
 
 
 class SideBar extends Component{
-  state={
-    sideBar:true
-  }
-  widthChangeHandler=()=>{
-
-    this.setState({sideBar:!this.state.sideBar});
-  }
 
   render(){
-
-    let sideBarStyle=[classes['side-bar']];
-    if (!this.state.sideBar){
-      sideBarStyle.push(classes['side-bar--width-small']);
-    } else {
-    sideBarStyle.push(classes['side-bar--width-medium']);
-    }
-
-
-    return(<div className={sideBarStyle.join(' ')} onClick={this.widthChangeHandler}>
+    return(<div className={this.props.className} onClick={this.props.clicked}>
       <p className={[
           classes['paragraph'], classes['side-bar__paragraph']
         ].join(' ')}>test test</p>

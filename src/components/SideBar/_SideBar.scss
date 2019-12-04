@@ -1,7 +1,7 @@
 .side-bar{
-  position:sticky;
-  float:left;
+  position:fixed;
   top:0;
+  left:0;
   height:100vh;
   background-color: $color-grey-dark;
   border-right:$bars-border;
@@ -11,10 +11,10 @@
     color:$color-white;
   }
   &--width-small{
-    width:20%;
+    width:$side-bar-width-small;
   }
 
   &--width-medium{
-    width:$side-bar-width;
+    width:$side-bar-width-medium;
   }
 }
