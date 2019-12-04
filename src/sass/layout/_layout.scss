@@ -1,14 +1,18 @@
 .main{
-  margin-top:$nav-bar-height;
+  // margin-top:$nav-bar-height;
   background-color: $color-grey-light-2;
   position:relative;
   @include clearfix;
 
-  &__pages{
+  &__container{
   float:left;
-  padding:5rem;
-  // margin-left: $side-bar-width;
+  padding:4rem 3.5rem;
   width:calc(100% - #{$side-bar-width});
+
+  }
+
+  &__content{
+    min-height: 100vh;
 
   }
 

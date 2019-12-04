@@ -9,16 +9,17 @@ class Layout extends Component {
   render() {
     return (<Aux>
 
-      <NavBar/>
-
       <main className={classes['main']}>
+
         <SideBar/>
-        <div className={classes['main__pages']}>
-          {this.props.children}
+        <div className={classes['main__container']}>
+          <div className={classes['main__content']}>
+            <NavBar/>
+            {this.props.children}
+          </div>
+
         </div>
-
       </main>
-
     </Aux>);
   }
 }

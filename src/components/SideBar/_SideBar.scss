@@ -1,12 +1,20 @@
 .side-bar{
   position:sticky;
   float:left;
-  top:$nav-bar-height;
-  height:calc(100vh - #{$nav-bar-height});
+  top:0;
+  height:100vh;
   background-color: $color-grey-dark;
   border-right:$bars-border;
-  width:$side-bar-width;
+  transition:all 1s ease;
+
   &__paragraph{
     color:$color-white;
+  }
+  &--width-small{
+    width:20%;
+  }
+
+  &--width-medium{
+    width:$side-bar-width;
   }
 }
