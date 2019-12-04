@@ -1,0 +1,31 @@
+.main{
+  // margin-top:$nav-bar-height;
+  background-color: $color-grey-light-2;
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  // @include clearfix;
+
+  &__container{
+  padding:4rem 3.5rem;
+  transition: all 1s ease;
+
+  &--width-medium{
+    opacity:1;
+    width:calc(100% - #{$side-bar-width-medium});
+  }
+  &--width-small{
+    opacity:1;
+  width:calc(100% - #{$side-bar-width-small});
+  }
+
+  }
+
+  &__content{
+    min-height: 100vh;
+    // transition:all 1s ease;
+  }
+
+
+}
