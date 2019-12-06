@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import classes from '../../sass/main.module.scss';
-import transition from './transitions/slide.module.scss';
-import NavBar from '../../components/NavBar/NavBar';
-import SideBar from '../../components/SideBar/SideBar';
 import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
+import Posts from '../../containers/Posts/Posts';
+import HomePage from '../../containers/HomePage/HomePage';
+import CreatePost from '../../containers/CreatePost/CreatePost';
+import transition from './transitions/slide.module.scss';
+import SideBar from '../../components/SideBar/SideBar';
+
 import Aux from '../Aux/Aux';
 
 class Layout extends Component {
@@ -24,21 +27,23 @@ class Layout extends Component {
         <SideBar className={classes['side-bar']}/>
         <Route render={({location})=>{
 
+          console.log(location);
           return (
             <TransitionGroup>
               <CSSTransition
                 key={location.key}
-                timeout={600}
+                timeout={{
+                  enter:600,
+                  exit:500
+                }}
                 classNames={transition}
                 unmountOnExit
                   >
-
-                <div className={classes['main__container']}>
-                  <div className={classes['main__content']}>
-                    <NavBar/>
-                    {this.props.children}
-                  </div>
-                </div>
+                    <Switch location={location}>
+                      <Route path='/createpost' component={CreatePost}></Route>
+                      <Route path='/posts'  component={Posts}/>
+                      <Route path='/' exact component={HomePage}/>
+                    </Switch>
 
               </CSSTransition>
             </TransitionGroup>);

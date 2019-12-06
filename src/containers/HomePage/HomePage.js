@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import GridTest from '../../components/GridTest';
+import Pages from '../..//hoc/Pages/Pages';
 import classes from '../../sass/main.module.scss';
 
 class HomePage extends Component{
@@ -9,6 +10,9 @@ class HomePage extends Component{
 
     return(
       <Aux>
+        <Pages>
+
+
         <div className={classes['row']}>
           <h1 className={classes['heading-primary']}>
             This is your Home Page.
@@ -18,6 +22,7 @@ class HomePage extends Component{
           </h1>
           <GridTest/>
         </div>
+            </Pages>
       </Aux>
 
     );

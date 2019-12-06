@@ -3,6 +3,7 @@ import Post from '../../components/Post/Post';
 import classes from '../../sass/main.module.scss';
 import Button from '../../components/UI/Button/Button';
 import axios from '../../axios-instance';
+import Pages from '../..//hoc/Pages/Pages';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class Posts extends Component{
@@ -39,6 +40,9 @@ class Posts extends Component{
       ));
     }
     return(
+<Pages>
+
+
       <div>
         {posts}
         <div className={classes.Posts}>
@@ -47,7 +51,7 @@ class Posts extends Component{
 
       </div>
 
-
+</Pages>
     );
   }
 }

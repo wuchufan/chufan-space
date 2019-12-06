@@ -1,0 +1,17 @@
+.pages{
+  &__container{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  overflow-y:scroll;
+  padding:4rem 3.5rem;
+  transition: all 1s ease;
+  width:$side-bar-width-medium;
+
+  }
+
+  &__content{
+    min-height: 100vh;
+  }
+}

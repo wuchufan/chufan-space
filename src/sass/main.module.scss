@@ -25,13 +25,15 @@
 @import '../components/UI/Model/Model.module.scss';
 @import '../components/UI/Input/Input.module.scss';
 @import '../components/UI/Button/Button.module.scss';
-@import '../hoc/Layout/Layout.module.scss';
-// @import '../hoc/Layout/transitions/slide.module.scss';
+
+
 
 //Pages
 @import '../containers/CreatePost/CreatePost.module.scss';
 @import '../containers/HomePage/HomePage.module.scss';
 @import '../containers/Posts/Posts.module.scss';
 
-//layout
+//Layout
 @import 'layout/grid.scss';
+@import '../hoc/Layout/Layout.module.scss';
+@import '../hoc/Pages/Pages.module.scss'
