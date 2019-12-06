@@ -3,14 +3,14 @@
   top:0;
   left:0;
   height:100vh;
-  background-color: $color-grey-dark;
+  background-color: rgba($color-grey-dark-2,.1);
   border-right:$bars-border;
   transition:all 1s ease;
   width:calc(100% - #{$side-bar-width-medium});
 
 
   &__paragraph{
-    color:$color-white;
+    color:$color-black;
   }
 
 }
