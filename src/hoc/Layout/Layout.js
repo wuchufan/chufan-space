@@ -26,15 +26,13 @@ class Layout extends Component {
 
         <SideBar className={classes['side-bar']}/>
         <Route render={({location})=>{
-
-          console.log(location);
           return (
-            <TransitionGroup>
+            <TransitionGroup >
               <CSSTransition
                 key={location.key}
                 timeout={{
-                  enter:600,
-                  exit:500
+                  enter:500,
+                  exit:400
                 }}
                 classNames={transition}
                 unmountOnExit

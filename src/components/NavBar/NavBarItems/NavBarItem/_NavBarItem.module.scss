@@ -16,3 +16,7 @@
   background-color:grey;
   border-bottom: .4rem solid lightgreen;
 }
+
+.NavBarItem a.active{
+  pointer-events: none;
+}
