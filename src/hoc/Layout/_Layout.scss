@@ -10,15 +10,7 @@
   &__container{
   padding:4rem 3.5rem;
   transition: all 1s ease;
-
-  &--width-medium{
-    opacity:1;
-    width:calc(100% - #{$side-bar-width-medium});
-  }
-  &--width-small{
-    opacity:1;
-  width:calc(100% - #{$side-bar-width-small});
-  }
+  width:$side-bar-width-medium;
 
   }
 
