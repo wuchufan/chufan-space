@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
-import {Route,Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import classes from '../../sass/main.module.scss';
-import {
-  CSSTransition,
-  TransitionGroup,
-} from 'react-transition-group';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Posts from '../../containers/Posts/Posts';
 import HomePage from '../../containers/HomePage/HomePage';
 import CreatePost from '../../containers/CreatePost/CreatePost';
@@ -16,34 +13,24 @@ import Aux from '../Aux/Aux';
 
 class Layout extends Component {
 
-
   render() {
-
-
 
     return (<Aux>
 
       <main className={classes['main']}>
 
-
-        <Route render={({location})=>{
-          return (
-            <Aux>
-              {/* SideBar */}
-              <TransitionGroup >
-                <CSSTransition
-                  key={location.key}
-                  timeout={{
-                      enter:500,
-                      exit:400
-                  }}
-                  classNames={fade}
-                  unmountOnExit
-                >
+        <Route render={({location}) => {
+          return (<Aux>
+            {/* SideBar */}
+            <TransitionGroup >
+              <CSSTransition key={location.key} timeout={{
+                enter: 500,
+                exit: 400
+                  }} classNames={fade} unmountOnExit="unmountOnExit">
 
                   <Switch location={location}>
                     <Route path='/posts' component={SideBarPosts}/>
-                    <Route path='/' exact component={SideBarHomePage}/>
+                    <Route path='/' exact="exact" component={SideBarHomePage}/>
                   </Switch>
 
                 </CSSTransition>
@@ -51,26 +38,20 @@ class Layout extends Component {
 
               {/* Content Page */}
               <TransitionGroup >
-                <CSSTransition
-                  key={location.key}
-                  timeout={{
-                    enter:500,
-                    exit:400
-                  }}
-                  classNames={transition}
-                  unmountOnExit
-                >
-                      <Switch location={location}>
-                        <Route path='/createpost' component={CreatePost}/>
-                        <Route path='/posts'  component={Posts}/>
-                        <Route path='/' exact component={HomePage}/>
-                      </Switch>
+                <CSSTransition key={location.key} timeout={{
+                    enter: 500,
+                    exit: 400
+                  }} classNames={transition} unmountOnExit="unmountOnExit">
+                  <Switch location={location}>
+                    <Route path='/createpost' component={CreatePost}/>
+                    <Route path='/posts' component={Posts}/>
+                    <Route path='/' exact="exact" component={HomePage}/>
+                  </Switch>
 
-                    </CSSTransition>
-                  </TransitionGroup>
+                </CSSTransition>
+              </TransitionGroup>
             </Aux>);
-        }}/>
-
+          }}/>
 
       </main>
     </Aux>);
