@@ -18,7 +18,7 @@
 @import '../components/NavBar/NavBrand/NavBrand.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItem/NavBarItem.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItems.module.scss';
-@import '../components/SideBar/SideBar.scss';
+
 
 @import '../components/Post/Post.module.scss';
 
@@ -36,4 +36,5 @@
 //Layout
 @import 'layout/grid.scss';
 @import '../hoc/Layout/Layout.module.scss';
-@import '../hoc/Pages/Pages.module.scss'
+@import '../hoc/Pages/Pages.module.scss';
+@import '../hoc/SideBar/SideBar.scss';
