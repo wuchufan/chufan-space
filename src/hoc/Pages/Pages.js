@@ -10,15 +10,15 @@ class Pages extends Component {
 
     switch (this.props.location.pathname){
       case '/':
-        pageWidth.push(classes['pages__width-medium']);
+        pageWidth.push(classes['pages--width-medium']);
       break;
 
       case '/posts':
-      pageWidth.push(classes['pages__width-large']);
+      pageWidth.push(classes['pages--width-large']);
       break;
 
       default:
-      pageWidth.push(classes['pages__width-medium']);
+      pageWidth.push(classes['pages--width-medium']);
       break;
     }
     return(

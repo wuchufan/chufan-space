@@ -6,11 +6,12 @@
   background-color: rgba($color-grey-dark-2,.1);
   border-right:$bars-border;
   transition:all 1s ease;
-  width:calc(100% - #{$side-bar-width-medium});
+  width:calc(100% - #{$pages-width-medium});
 
-
-  &__paragraph{
-    color:$color-black;
+  &--width-medium{
+    width:calc(100% - #{$pages-width-medium});
   }
-
+  &--width-small{
+    width:calc(100% - #{$pages-width-large});
+  }
 }

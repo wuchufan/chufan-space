@@ -10,12 +10,12 @@
 
 
   }
-  &__width-large{
-    width:80%;
+  &--width-large{
+    width:$pages-width-large;
   }
 
-  &__width-medium{
-    width:50%;
+  &--width-medium{
+    width:$pages-width-medium;
   }
 
   &__content{

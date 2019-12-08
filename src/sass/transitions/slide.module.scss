@@ -2,6 +2,7 @@
   .enter{
     opacity:0;
     transform:translate(100%,0);
+
     &-active{
       opacity:1;
       transform:translate(0,0);
