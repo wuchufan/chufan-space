@@ -26,26 +26,26 @@ class Layout extends Component {
               <CSSTransition key={location.key} timeout={{
                 enter: 500,
                 exit: 400
-                  }} classNames={fade} unmountOnExit="unmountOnExit">
+              }} classNames={fade} unmountOnExit>
 
-                  <Switch location={location}>
-                    <Route path='/posts' component={SideBarPosts}/>
-                    <Route path='/' exact="exact" component={SideBarHomePage}/>
-                  </Switch>
+                <Switch location={location}>
+                  <Route path='/posts' component={SideBarPosts}/>
+                  <Route path='/' exact component={SideBarHomePage}/>
+                </Switch>
 
-                </CSSTransition>
-              </TransitionGroup>
+              </CSSTransition>
+            </TransitionGroup>
 
-              {/* Content Page */}
-              <TransitionGroup >
-                <CSSTransition key={location.key} timeout={{
-                    enter: 500,
-                    exit: 400
-                  }} classNames={transition} unmountOnExit="unmountOnExit">
-                  <Switch location={location}>
-                    <Route path='/createpost' component={CreatePost}/>
-                    <Route path='/posts' component={Posts}/>
-                    <Route path='/' exact="exact" component={HomePage}/>
+            {/* Content Page */}
+            <TransitionGroup >
+              <CSSTransition key={location.key} timeout={{
+                enter: 500,
+                exit: 400
+              }} classNames={transition} unmountOnExit>
+                <Switch location={location}>
+                  <Route path='/createpost' component={CreatePost}/>
+                  <Route path='/posts' component={Posts}/>
+                  <Route path='/' exact component={HomePage}/>
                   </Switch>
 
                 </CSSTransition>
