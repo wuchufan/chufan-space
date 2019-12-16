@@ -4,6 +4,7 @@
   left:0;
   height:100vh;
   background-color: rgba($color-grey-dark-2,.1);
+  color:$color-white;
   border-right:$bars-border;
   transition:all 1s ease;
   width:calc(100% - #{$pages-width-medium});

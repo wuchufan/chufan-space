@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from '../../hoc/SideBar/SideBar';
+import SideBar from '../../SideBar/SideBar';
 // import classes from '../../sass/main.module.scss';
 
 

@@ -18,8 +18,9 @@
 @import '../components/NavBar/NavBrand/NavBrand.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItem/NavBarItem.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItems.module.scss';
+@import '../Components/SideBar/SideBar.scss';
 
-
+@import '../components/Background/BgCanvas/BgCanvas.module.scss';
 @import '../components/Post/Post.module.scss';
 
 @import '../components/UI/Model/Model.module.scss';
@@ -37,4 +38,3 @@
 @import 'layout/grid.scss';
 @import '../hoc/Layout/Layout.module.scss';
 @import '../hoc/Pages/Pages.module.scss';
-@import '../hoc/SideBar/SideBar.scss';

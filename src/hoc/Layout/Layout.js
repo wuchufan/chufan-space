@@ -7,8 +7,9 @@ import HomePage from '../../containers/HomePage/HomePage';
 import CreatePost from '../../containers/CreatePost/CreatePost';
 import transition from '../../sass/transitions/slide.module.scss';
 import fade from '../../sass/transitions/fade.module.scss';
-import SideBarHomePage from '../../components/SideBarHomePage/SideBarHomePage';
-import SideBarPosts from '../../components/SideBarPosts/SideBarPosts';
+import SideBarHomePage from '../../components/SideBar/SideBarHomePage/SideBarHomePage';
+import SideBarPosts from '../../components/SideBar/SideBarPosts/SideBarPosts';
+import Background from '../../components/Background/Background';
 import Aux from '../Aux/Aux';
 
 class Layout extends Component {
@@ -16,7 +17,7 @@ class Layout extends Component {
   render() {
 
     return (<Aux>
-
+      <Background/>
       <main className={classes['main']}>
 
         <Route render={({location}) => {
