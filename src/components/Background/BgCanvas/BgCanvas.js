@@ -15,24 +15,16 @@ class BgCanvas extends Component{
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
     const ctx = canvas.getContext('2d');
-    const circleArray=[];
-    const circleConfig = {...this.props}
-    for (let i = 0; i < 100; i++){
-      let radius = Math.random() * 3;
-      // let dx = Math.random() * 0.2 * (-1) ** this.getRndInteger(-1,1);
-      // let dy = Math.random() * 0.2 * (-1) ** this.getRndInteger(-1,1);
-      // let x = Math.random() * (window.innerWidth - radius * 2) +radius;
-      // let y = Math.random() * (window.innerHeight - radius * 2) + radius;
-      let dx = circleConfig.dx;
-      let dy = circleConfig.dy;
-      let x = circleConfig.x;
-      let y = circleConfig.y;
+    const circleArray = this.props.circles;
+    const updatedCircleArray = circleArray.map((circle)=>{
+      return(
+        new Circle(ctx,circle.x,circle.y,circle.dx,circle.dy,circle.radius)
+      );
+    });
 
-      circleArray.push(new Circle(ctx,x,y,dx,dy,radius));
-
-    }
-    for (let i = 0; i<circleArray.length; i++){
-      circleArray[i].draw();
+    console.log(updatedCircleArray);
+    for (let i = 0; i<updatedCircleArray.length; i++){
+      updatedCircleArray[i].draw();
     }
   }
 
