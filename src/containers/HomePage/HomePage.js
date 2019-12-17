@@ -3,7 +3,8 @@ import Aux from '../../hoc/Aux/Aux';
 import GridTest from '../../components/GridTest';
 import Pages from '../..//hoc/Pages/Pages';
 import 'katex/dist/katex.min.css';
-import {InlineMath, BlockMath} from 'react-katex';
+import { BlockMath} from 'react-katex';
+// InlineMath
 import classes from '../../sass/main.module.scss';
 
 class HomePage extends Component{
