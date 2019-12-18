@@ -11,8 +11,8 @@ const sideBarHomePage=(props)=>{
         <h1>My name is Schrodinger,</h1>
         <h1>I'm meowster's cat!</h1>
         <h1>I have a sister called Einstein.</h1>
-        <h1>Meowster is currently away from home,</h1>
-        <h1>and he told me to take care of the guests.</h1>
+        <h1>Meowster is currently away from home.</h1>
+        <h1>He told me to take care of the guests.</h1>
         <h1>So leave me the message so I can tell meowster!</h1>
 
       </SideBar>

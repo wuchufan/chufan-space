@@ -7,9 +7,9 @@
   overflow-y:scroll;
   padding:$pages-padding;
   transition: all 1s ease;
-  background-color: $color-white;
+  background-color: $color-primary-light-2;
   &--inner{
-    border-top: $container-border-top;
+    // border-top: $container-border-top;
     min-height: 100vh;
     }
 
