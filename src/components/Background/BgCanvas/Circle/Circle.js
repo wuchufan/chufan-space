@@ -1,20 +1,4 @@
-function Circle(ctx, x, y, dx, dy, r) {
-  this.x = x;
-  this.y = y;
-  this.dx = dx;
-  this.dy = dy;
-  this.radius = r;
-  this.color = 'rgba(190, 225, 239, 0.4)';
-  this.draw = function() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-  };
-}
 
-
-export default Circle;
 export const circleConstructor=(number)=>{
     const circleArray=[];
     for (let i = 0; i < number; i++){
@@ -38,7 +22,3 @@ export const circleConstructor=(number)=>{
 export const getRndInteger=(min,max)=>{
     return Math.floor(Math.random() * (max - min) ) + min;
   };
-
-// export const circleConfig={
-//   radius: Math.random() * 3
-// }

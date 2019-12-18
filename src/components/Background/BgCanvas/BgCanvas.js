@@ -1,43 +1,49 @@
 import React,{ Component } from 'react';
-import Circle from './Circle/Circle';
-import classes from '../../../sass/main.module.scss';
+import PureCanvas from './PureCanvas/PureCanvas';
+
 
 
 class BgCanvas extends Component{
+
+  test=(x)=>{
+    console.log(this);
+    console.log(x);
+  }
+  saveContext=(ctx)=>{
+    this.ctx = ctx;
+  }
 
   getRndInteger=(min,max)=>{
     return Math.floor(Math.random() * (max - min) ) + min;
   }
 
-  componentDidMount(){
-    const canvas = this.refs.canvas;
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-    this.ctx = canvas.getContext('2d');
+  drawCircle = (x,y,radius,color) =>{
+    this.ctx.beginPath();
+    this.ctx.arc(x,y,radius, 0, Math.PI * 2, false);
+    this.ctx.fillStyle =color;
+    this.ctx.fill();
+  };
 
-  }
   componentDidUpdate(){
     this.ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
     const circleArray = this.props.circles;
-    const updatedCircleArray = circleArray.map((circle)=>{
-      return(
-        new Circle(this.ctx,circle.x,circle.y,circle.dx,circle.dy,circle.radius)
-      );
-    });
 
-
-    for (let i = 0; i<updatedCircleArray.length; i++){
-
-      updatedCircleArray[i].draw();
+    for (let i = 0; i<circleArray.length; i++){
+      let circle = {...circleArray[i]};
+      this.drawCircle(circle.x,circle.y,circle.radius,'rgba(190, 225, 239, 0.4)');
     }
   }
 
 
   render(){
     return (
-      <canvas ref="canvas" className={classes['canvas']}>
+      <PureCanvas
 
-      </canvas>
+        height={window.innerHeight}
+        width={window.innerWidth}
+        contextRef={this.saveContext}
+        test={this.test}/>
+
     )
   }
 }
