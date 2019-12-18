@@ -10,20 +10,24 @@ class BgCanvas extends Component{
   }
 
   componentDidMount(){
-
     const canvas = this.refs.canvas;
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
-    const ctx = canvas.getContext('2d');
+    this.ctx = canvas.getContext('2d');
+
+  }
+  componentDidUpdate(){
+    this.ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
     const circleArray = this.props.circles;
     const updatedCircleArray = circleArray.map((circle)=>{
       return(
-        new Circle(ctx,circle.x,circle.y,circle.dx,circle.dy,circle.radius)
+        new Circle(this.ctx,circle.x,circle.y,circle.dx,circle.dy,circle.radius)
       );
     });
 
-    console.log(updatedCircleArray);
+
     for (let i = 0; i<updatedCircleArray.length; i++){
+
       updatedCircleArray[i].draw();
     }
   }

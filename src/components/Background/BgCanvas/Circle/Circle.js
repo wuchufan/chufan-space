@@ -11,18 +11,6 @@ function Circle(ctx, x, y, dx, dy, r) {
     ctx.fillStyle = this.color;
     ctx.fill();
   };
-  this.update = function() {
-    if (this.x + this.radius > window.innerWidth || this.x < this.radius) {
-      this.dx = -this.dx;
-
-    }
-    if (this.y + this.radius > window.innerHeight || this.y < this.radius) {
-      this.dy = -this.dy;
-
-    }
-    this.x += this.dx;
-    this.y += this.dy;
-  };
 }
 
 
