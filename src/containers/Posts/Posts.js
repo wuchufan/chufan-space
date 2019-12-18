@@ -43,13 +43,13 @@ class Posts extends Component{
 <Pages>
 
 
-      <div>
-        {posts}
-        <div className={classes.Posts}>
-          <Button action={this.newPostActionHandler}>New Post</Button>
-      </div>
+  <div>
+    {posts}
+    <div className={classes['post__button']}>
+      <Button action={this.newPostActionHandler}>New Post</Button>
+    </div>
 
-      </div>
+  </div>
 
 </Pages>
     );

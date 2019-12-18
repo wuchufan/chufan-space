@@ -18,7 +18,7 @@ class HomePage extends Component{
 
           <div className={classes['row']}>
             <h1 className={classes['heading-primary']}>
-              This is your Home Page.
+
             </h1>
             <h1 className={classes['heading-primary']}>
               The Great Master is currently working hard on expanding this universe.
@@ -26,13 +26,10 @@ class HomePage extends Component{
             <div className={classes['heading-primary']}>
               <BlockMath math="\nabla \cdot \vec{E}=\frac \rho {\epsilon_0}"/>
             </div>
+            
 
 
-
-
-
-
-          <GridTest/>
+            <GridTest/>
         </div>
             </Pages>
       </Aux>

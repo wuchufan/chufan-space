@@ -5,9 +5,13 @@
   right:0;
   bottom:0;
   overflow-y:scroll;
-  padding:4rem 3.5rem;
+  padding:$pages-padding;
   transition: all 1s ease;
   background-color: $color-white;
+  &--inner{
+    border-top: $container-border-top;
+    min-height: 100vh;
+    }
 
   }
   &--width-large{
@@ -19,6 +23,7 @@
   }
 
   &__content{
-    min-height: 100vh;
+    padding-top:3rem;
   }
+
 }

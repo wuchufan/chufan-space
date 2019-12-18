@@ -10,11 +10,12 @@
   color:$color-white;
   text-decoration: none;
   display:block;
+  transition:background-color 0.2s ease;
 }
 .NavBarItem a:hover,
 .NavBarItem a.active{
   background-color:grey;
-  border-bottom: .4rem solid lightgreen;
+  border-bottom: 0.4rem solid lightgreen;
 }
 
 .NavBarItem a.active{

@@ -23,9 +23,11 @@ class Pages extends Component {
     }
     return(
       <div className={pageWidth.join(' ')}>
-        <div className={classes['pages__content']}>
+        <div className={classes['pages__container--inner']}>
           <NavBar/>
-          {this.props.children}
+          <div className={classes['pages__content']}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     )

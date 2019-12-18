@@ -23,8 +23,9 @@ class SideBar extends Component{
     }
     return(
       <div className={sideBarWidth.join(' ')}>
-        {this.props.children}
-
+        <div className={[classes['side-bar__content-box'],classes['row']].join(' ')}>
+          {this.props.children}
+        </div>
       </div>);
       }
 }
