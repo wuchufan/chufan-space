@@ -1,11 +1,24 @@
-import React from 'react';
+import React,{Component} from 'react';
 import SideBar from '../../SideBar/SideBar';
 import Input from '../../../components/UI/Input/Input';
 import classes from '../../../sass/main.module.scss';
 
 
 
-const sideBarHomePage=(props)=>{
+class SideBarHomePage extends Component{
+
+  state={
+    show:false
+  }
+
+  toggleHandler=()=>{
+    console.log(123);
+    this.setState({show:!this.state.show})
+  }
+
+
+  render(){
+
   return(
       <SideBar>
         <div className={classes['home']}>
@@ -13,29 +26,45 @@ const sideBarHomePage=(props)=>{
           <div className={classes['home__title']}>
             <h1 className={
               [classes['heading-primary'],
-              classes['u-margin-bottom-medium']
-              ].join(' ')}>Greetings traveler,</h1>
+              classes['u-margin-bottom-medium'],
+              classes['heading-primary--main']
+
+              ].join(' ')}>
+              <span className={
+                [classes['home__title-span'],
+                classes['home__title-span--1']]
+                .join(' ')}>
+                Greetings
+              </span>
+              <span className={
+                [classes['home__title-span'],
+                classes['home__title-span--2']]
+                .join(' ')}>
+                traveler,
+              </span>
+            </h1>
           </div>
           <div className={classes['home__cat-words']}>
-
-            <p className={classes['paragraph']}>My name is Schrodinger,</p>
-            <p className={classes['paragraph']}>I'm meowster's cat!</p>
-            <p className={classes['paragraph']}>I have a sister called Einstein.</p>
-            <p className={classes['paragraph']}>Meowster is currently away from home.</p>
-            <p className={classes['paragraph']}>He told me to take care of the guests.</p>
-            <p className={classes['paragraph']}>So leave me the message so I can tell meowster!</p>
+            <p className={classes['paragraph']}>
+              <span>I'm meowster's cat!</span>
+              <span>My name is Schrodinger, meow.</span>
+              <span>Meowster is currently away from home.</span>
+              <span>He told me to take care of the guests.</span>
+              <span>So leave me the message so I can tell meowster!</span></p>
           </div>
           <div className={classes['home__message-box']}>
-            <Input elementType={'textarea'} className={'home__input--textarea'}>
-              Leave your message here meow!
-            </Input>
+            <span className={classes['btn--text']} onClick={()=>this.toggleHandler()}>Leave a message meow!</span>
+
+            <Input elementType={'textarea'} className={'home__input--textarea'}/>
+
           </div>
         </div>
 
       </SideBar>
 
 
-  )
+    )
+  }
 }
 
-export default sideBarHomePage;
+export default SideBarHomePage;

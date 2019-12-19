@@ -4,7 +4,7 @@ import classes from '../../../../sass/main.module.scss';
 class PureCanvas extends Component{
 
   shouldComponentUpdate(){
-    return false;
+    return true;
   }
 
   render(){

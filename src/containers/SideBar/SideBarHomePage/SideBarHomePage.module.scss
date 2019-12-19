@@ -7,23 +7,55 @@
   &__title,
   &__cat-words,
   &__message-box{
-    margin: 2rem 0;
+    margin-bottom: 3rem;
   }
+
+
   &__title{
+    border-bottom:0.5rem dotted $color-primary-light-1;
+  }
+
+  &__title-span{
+
+      line-height:1.2;
+      display:block;
+      text-transform: capitalize;
+
+
+
+    &--2{
+      font-size: 5rem;
+      color:rgba($color-primary-dark,0.8);
+
+    }
 
   }
 
   &__cat-words{
+   & span{
+     font-size:1.7rem;
+     display:block;
+     line-height:2;
+    color:$color-primary-light-1;
+    font-weight:700;
 
+   }
   }
 
   &__message-box{
-    font-size: 1.5rem;
+
+    font-size: 2rem;
+    line-height:2;
+    color:rgba($color-primary-dark, 0.8);
+    font-weight:700;
+
 
   }
 
   &__input--textarea{
+
+    background-color: rgba($color-white,0.75);
     resize:none;
-    height:25rem;
+    height:10rem;
   }
 }
