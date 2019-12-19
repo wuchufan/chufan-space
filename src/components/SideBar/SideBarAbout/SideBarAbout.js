@@ -3,13 +3,13 @@ import SideBar from '../../SideBar/SideBar';
 
 
 
-const sideBarPosts=(props)=>{
+const sideBarLibrary=(props)=>{
   return(
     <SideBar>
-      <h1>This is SideBar content for SideBarPost</h1>
+      <h1>This is SideBar content for SideBarAbout</h1>
     </SideBar>
 
   )
 }
 
-export default sideBarPosts;
+export default sideBarLibrary;

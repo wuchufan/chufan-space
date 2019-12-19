@@ -8,6 +8,8 @@ const navBarItems=(props)=>{
     <ul className={classes.NavBarItems}>
       <NavBarItem link='/'>Home</NavBarItem>
       <NavBarItem link='/posts'>Posts</NavBarItem>
+      <NavBarItem link='/library'>Library</NavBarItem>
+      <NavBarItem link='/about'>About Me</NavBarItem>
     </ul>
   );
 }

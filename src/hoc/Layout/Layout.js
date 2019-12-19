@@ -4,11 +4,15 @@ import classes from '../../sass/main.module.scss';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Posts from '../../containers/Posts/Posts';
 import HomePage from '../../containers/HomePage/HomePage';
+import About from '../../containers/About/About';
+import Library from '../../containers/Library/Library';
 import CreatePost from '../../containers/CreatePost/CreatePost';
 import transition from '../../sass/transitions/slide.module.scss';
 import fade from '../../sass/transitions/fade.module.scss';
 import SideBarHomePage from '../../components/SideBar/SideBarHomePage/SideBarHomePage';
 import SideBarPosts from '../../components/SideBar/SideBarPosts/SideBarPosts';
+import SideBarLibrary from '../../components/SideBar/SideBarLibrary/SideBarLibrary';
+import SideBarAbout from '../../components/SideBar/SideBarAbout/SideBarAbout';
 import Background from '../../components/Background/Background';
 import Aux from '../Aux/Aux';
 
@@ -30,6 +34,8 @@ class Layout extends Component {
               }} classNames={fade} unmountOnExit>
 
                 <Switch location={location}>
+                  <Route path='/about' component={SideBarAbout}/>
+                  <Route path='/library' component={SideBarLibrary}/>
                   <Route path='/posts' component={SideBarPosts}/>
                   <Route path='/' exact component={SideBarHomePage}/>
                 </Switch>
@@ -45,6 +51,8 @@ class Layout extends Component {
               }} classNames={transition} unmountOnExit>
                 <Switch location={location}>
                   <Route path='/createpost' component={CreatePost}/>
+                  <Route path='/library' component={Library}/>
+                  <Route path='/about' component={About}/>
                   <Route path='/posts' component={Posts}/>
                   <Route path='/' exact component={HomePage}/>
                   </Switch>
