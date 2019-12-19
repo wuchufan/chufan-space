@@ -8,14 +8,14 @@ const input=(props)=>{
     inputElement=<input value={props.value} className={classes.InputElement} onChange={props.inputChanged} {...props.elementConfig}/>;
     break;
     case('textarea'):
-    inputElement=<textarea value={props.value} className={classes.InputElement+' '+classes.TextArea} onChange={props.inputChanged} {...props.elementConfig}/>;
+    inputElement=<textarea value={props.value} className={classes.InputElement+' '+classes[props.className]} onChange={props.inputChanged} {...props.elementConfig}/>;
     break;
     default:
     inputElement=<input value={props.value} className={classes.InputElement} onChange={props.inputChanged} {...props.elementConfig}/>;
     }
     return(
       <div>
-        <label className={classes.Label}>{props.children}</label>
+        <label className={classes['Label']}>{props.children}</label>
         {inputElement}
       </div>
     );

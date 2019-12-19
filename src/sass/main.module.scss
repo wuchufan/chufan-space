@@ -12,13 +12,16 @@
 @import 'base/typography.module.scss';
 
 
+//Utilities
+@import 'base/utilities.module.scss';
+
 //Components
 
 @import '../components/NavBar/NavBar.module.scss';
 @import '../components/NavBar/NavBrand/NavBrand.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItem/NavBarItem.module.scss';
 @import '../components/NavBar/NavBarItems/NavBarItems.module.scss';
-@import '../components/SideBar/SideBar.module.scss';
+
 
 @import '../components/Background/BgCanvas/PureCanvas/PureCanvas.module.scss';
 @import '../components/Post/Post.module.scss';
@@ -33,6 +36,8 @@
 @import '../containers/CreatePost/CreatePost.module.scss';
 @import '../containers/HomePage/HomePage.module.scss';
 @import '../containers/Posts/Posts.module.scss';
+@import '../containers/SideBar/SideBar.module.scss';
+@import '../containers/SideBar/SideBarHomePage/SideBarHomePage.module.scss';
 
 //Layout
 @import 'layout/grid.scss';

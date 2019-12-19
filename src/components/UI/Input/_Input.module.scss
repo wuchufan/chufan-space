@@ -1,6 +1,7 @@
 .Label{
   display:block;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: inherit;
 }
 
 .InputElement{
@@ -14,10 +15,7 @@
   width:100%;
 
 }
-.TextArea{
-  resize:none;
-  height:30rem;
-}
+
 
 .InputElement:focus{
   outline:none;

@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import Aux from '../../hoc/Aux/Aux';
-import GridTest from '../../components/GridTest';
 import Pages from '../..//hoc/Pages/Pages';
 import 'katex/dist/katex.min.css';
 import { BlockMath} from 'react-katex';
@@ -17,19 +16,14 @@ class HomePage extends Component{
 
 
           <div className={classes['row']}>
-            <h1 className={classes['heading-primary']}>
 
-            </h1>
-            <h1 className={classes['heading-primary']}>
+            <h1 className={classes['heading-secondary']}>
               The Great Master is currently working hard on expanding this universe.
             </h1>
-            <div className={classes['heading-primary']}>
+            <div className={classes['heading-secondary']}>
               <BlockMath math="\nabla \cdot \vec{E}=\frac \rho {\epsilon_0}"/>
             </div>
-            
 
-
-            <GridTest/>
         </div>
             </Pages>
       </Aux>

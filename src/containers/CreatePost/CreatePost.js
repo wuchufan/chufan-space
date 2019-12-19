@@ -71,10 +71,10 @@ class CreatePost extends Component {
       <Button>Submit</Button>
     </form>);
     return (<Aux>
-<Pages>
+      <Pages>
 
 
-      <div>
+        <div>
         {form}
       </div>
       </Pages>

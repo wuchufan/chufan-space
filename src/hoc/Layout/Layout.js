@@ -9,10 +9,10 @@ import Library from '../../containers/Library/Library';
 import CreatePost from '../../containers/CreatePost/CreatePost';
 import transition from '../../sass/transitions/slide.module.scss';
 import fade from '../../sass/transitions/fade.module.scss';
-import SideBarHomePage from '../../components/SideBar/SideBarHomePage/SideBarHomePage';
-import SideBarPosts from '../../components/SideBar/SideBarPosts/SideBarPosts';
-import SideBarLibrary from '../../components/SideBar/SideBarLibrary/SideBarLibrary';
-import SideBarAbout from '../../components/SideBar/SideBarAbout/SideBarAbout';
+import SideBarHomePage from '../../containers/SideBar/SideBarHomePage/SideBarHomePage';
+import SideBarPosts from '../../containers/SideBar/SideBarPosts/SideBarPosts';
+import SideBarLibrary from '../../containers/SideBar/SideBarLibrary/SideBarLibrary';
+import SideBarAbout from '../../containers/SideBar/SideBarAbout/SideBarAbout';
 import Background from '../../components/Background/Background';
 import Aux from '../Aux/Aux';
 
@@ -55,7 +55,7 @@ class Layout extends Component {
                   <Route path='/about' component={About}/>
                   <Route path='/posts' component={Posts}/>
                   <Route path='/' exact component={HomePage}/>
-                  </Switch>
+                </Switch>
 
                 </CSSTransition>
               </TransitionGroup>
