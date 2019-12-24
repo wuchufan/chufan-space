@@ -5,10 +5,7 @@ import PureCanvas from './PureCanvas/PureCanvas';
 
 class BgCanvas extends Component{
 
-  test=(x)=>{
-    console.log(this);
-    console.log(x);
-  }
+
   saveContext=(ctx)=>{
     this.ctx = ctx;
   }
