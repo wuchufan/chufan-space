@@ -59,16 +59,20 @@ class CreatePost extends Component {
 
     const form = (
       <form onSubmit={this.submitHandler} className={classes.Form}>
-      {formElementsArray.map((input) => (
-        <Input
-          key={input.key}
-          elementConfig={input.config.elementConfig}
-          elementType={input.config.elementType}
-          inputChanged={(event)=>(this.inputChangedHandler(event,input.key))}
-          value={input.config.value}>
-          {input.key}:
-        </Input>))}
-      <Button>Submit</Button>
+        {formElementsArray.map((input) => (
+          <Input
+            key={input.key}
+            elementConfig={input.config.elementConfig}
+            elementType={input.config.elementType}
+            inputChanged={(event)=>(this.inputChangedHandler(event,input.key))}
+            value={input.config.value}>
+            {input.key}:
+          </Input>))}
+        <div className={classes['Form__button']}>
+
+
+          <Button type="btn">Submit</Button>
+        </div>
     </form>);
     return (<Aux>
       <Pages>

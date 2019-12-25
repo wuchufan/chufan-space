@@ -3,7 +3,7 @@ import BgCanvas from './BgCanvas/BgCanvas';
 import {circleConstructor} from './BgCanvas/Circle/Circle';
 
 
-const CIRCLE = circleConstructor(80);
+const CIRCLE = circleConstructor(60);
 
 class Background extends Component{
   state = {
