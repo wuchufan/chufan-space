@@ -40,18 +40,15 @@ class Posts extends Component{
       ));
     }
     return(
-<Pages>
+            <Pages>
+              <div>
+                {posts}
+                <div className={classes['post__button']}>
+                  <Button action={this.newPostActionHandler} type='button'>New Post</Button>
+                </div>
 
-
-  <div>
-    {posts}
-    <div className={classes['post__button']}>
-      <Button action={this.newPostActionHandler} type='button'>New Post</Button>
-    </div>
-
-  </div>
-
-</Pages>
+              </div>
+            </Pages>
     );
   }
 }
