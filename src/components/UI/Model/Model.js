@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import classes from '../../../sass/main.module.scss';
+import classes from './Model.module.scss';
 
 class Model extends Component {
 

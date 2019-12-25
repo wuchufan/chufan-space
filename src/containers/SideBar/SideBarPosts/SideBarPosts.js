@@ -6,7 +6,7 @@ import SideBarLayout from '../../../components/SideBarLayout/SideBarLayout';
 
 
 const sideBarPosts=(props)=>{
-  // const titleStyle = [classes['heading-secondary'],classes['heading-primary--main']].join(' ');
+
   return(
     <SideBar>
       <SideBarLayout title='Posts'>
@@ -16,19 +16,8 @@ const sideBarPosts=(props)=>{
           </span>
         </p>
       </SideBarLayout>
-      {/* <div className={classes['side-bar']}>
-        <div className={classes['side-bar__title']}>
-          <h1 className={titleStyle}>Posts</h1>
-        </div>
-        <div className={classes['side-bar__cat-words']}>
-          <p className={classes['paragraph']}>
-        <span>
 
-        </span>
-          </p>
-        </div>
-      </div> */}
-
+      
     </SideBar>
 
   )

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
 import Pages from '../..//hoc/Pages/Pages';
-import classes from '../../sass/main.module.scss';
+import classes from './CreatePost.module.scss';
 import axios from '../../axios-instance';
 import Aux from '../../hoc/Aux/Aux';
 

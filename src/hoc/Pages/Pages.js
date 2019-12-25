@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
-import classes from '../../sass/main.module.scss';
+import classes from './Pages.module.scss';
 import NavBar from '../../components/NavBar/NavBar';
 
 class Pages extends Component {

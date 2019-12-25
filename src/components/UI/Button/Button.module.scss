@@ -1,3 +1,5 @@
+@import '../../../sass/main.module.scss';
+
 .btn{
   display:block;
   padding:1rem 2rem;
@@ -21,6 +23,7 @@
 
 
 .btn--text{
+
   display:inline-block;
   padding: 1.5px 4px;
   cursor: pointer;

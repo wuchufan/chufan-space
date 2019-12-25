@@ -1,4 +1,6 @@
-.side-bar-layout{
+@import '../../sass/main.module.scss';
+
+.side-bar{
   position:relative;
   display:flex;
   flex-direction:column;

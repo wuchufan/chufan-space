@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import classes from '../../../../sass/main.module.scss';
+// import classes from '../../../../sass/main.module.scss';
+import classes from './PureCanvas.module.scss';
 
 class PureCanvas extends Component{
 

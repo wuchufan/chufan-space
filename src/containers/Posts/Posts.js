@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Post from '../../components/Post/Post';
-import classes from '../../sass/main.module.scss';
+import classes from './Posts.module.scss';
 import Button from '../../components/UI/Button/Button';
 import axios from '../../axios-instance';
-import Pages from '../..//hoc/Pages/Pages';
+import Pages from '../../hoc/Pages/Pages';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class Posts extends Component{
@@ -46,7 +46,7 @@ class Posts extends Component{
   <div>
     {posts}
     <div className={classes['post__button']}>
-      <Button action={this.newPostActionHandler}>New Post</Button>
+      <Button action={this.newPostActionHandler} type='button'>New Post</Button>
     </div>
 
   </div>

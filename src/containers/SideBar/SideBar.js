@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {withRouter} from 'react-router-dom';
-import classes from '../../sass/main.module.scss';
+import classes from './SideBar.module.scss';
 
 
 class SideBar extends Component{

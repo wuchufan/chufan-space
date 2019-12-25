@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import classes from '../../sass/main.module.scss';
+import classes from './Layout.module.scss';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Posts from '../../containers/Posts/Posts';
 import HomePage from '../../containers/HomePage/HomePage';

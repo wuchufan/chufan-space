@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import SideBar from '../../SideBar/SideBar';
 import Input from '../../../components/UI/Input/Input';
-import classes from '../../../sass/main.module.scss';
+import Button from '../../../components/UI/Button/Button';
+import classes from './SideBarHomePage.module.scss';
 
 
 
@@ -43,13 +44,16 @@ class SideBarHomePage extends Component{
               <span>He told me to take care of the guests.</span>
               <span>So leave me the message so I can tell meowster!</span></p>
           </div>
+
           <div className={classes['home__message-box']}>
             <div className={classes['u-margin-bottom-medium']}>
-              <Input elementType={'textarea'} className={'home__input--textarea'}/>
+              <Input elementType={'textarea'} className={'textarea--main'}/>
             </div>
 
-            <span className={classes['btn--text']}>Leave a message meow!</span>
 
+            <Button type='text'>
+              Leave a message meow!
+            </Button>
 
 
           </div>

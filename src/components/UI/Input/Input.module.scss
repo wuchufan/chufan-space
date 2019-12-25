@@ -1,3 +1,5 @@
+@import '../../../sass/main.module.scss';
+
 .Label{
   display:block;
   text-transform: capitalize;
@@ -19,4 +21,12 @@
 
 .InputElement:focus{
   outline:none;
+}
+
+.textarea{
+  &--main{
+        background-color: rgba($color-white,0.75);
+        resize:none;
+        height:10rem;
+  }
 }
