@@ -1,12 +1,20 @@
 import React from 'react';
 import SideBar from '../../SideBar/SideBar';
+import SideBarLayout from '../../../components/SideBarLayout/SideBarLayout';
 
 
 
 const sideBarLibrary=(props)=>{
   return(
     <SideBar>
-      <h1>This is SideBar content for SideBarLibrary</h1>
+      <SideBarLayout title='Library'>
+        <p>
+          <span>
+            This is where meowster put his important notes.
+          </span>
+        </p>
+      </SideBarLayout>
+    
     </SideBar>
 
   )

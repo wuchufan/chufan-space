@@ -6,11 +6,22 @@ body{
   font-size:6rem;
 
   &--main{
+    color:$color-primary-dark;
+  }
+
+  &--sub{
     color:$color-primary-light-1;
   }
 }
 .heading-secondary{
-  font-size:2.5rem;
+  font-size:4rem;
+  &--main{
+    color:$color-primary-dark;
+  }
+
+  &--sub{
+    color:$color-primary-light-1;
+  }
 }
 .heading-tertiary{
   font-size:1.5rem;

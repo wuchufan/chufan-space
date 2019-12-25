@@ -7,15 +7,6 @@ import classes from '../../../sass/main.module.scss';
 
 class SideBarHomePage extends Component{
 
-  state={
-    show:false
-  }
-
-  toggleHandler=()=>{
-    console.log(123);
-    this.setState({show:!this.state.show})
-  }
-
 
   render(){
 
@@ -26,22 +17,22 @@ class SideBarHomePage extends Component{
           <div className={classes['home__title']}>
             <h1 className={
               [classes['heading-primary'],
-              classes['u-margin-bottom-medium'],
-              classes['heading-primary--main']
-
+              classes['u-margin-bottom-medium']
               ].join(' ')}>
+
               <span className={
                 [classes['home__title-span'],
-                classes['home__title-span--1']]
+                classes['heading-primary--main']]
                 .join(' ')}>
                 Greetings
               </span>
               <span className={
                 [classes['home__title-span'],
-                classes['home__title-span--2']]
+                classes['heading-primary--sub']]
                 .join(' ')}>
                 traveler,
               </span>
+
             </h1>
           </div>
           <div className={classes['home__cat-words']}>
@@ -53,9 +44,13 @@ class SideBarHomePage extends Component{
               <span>So leave me the message so I can tell meowster!</span></p>
           </div>
           <div className={classes['home__message-box']}>
-            <span className={classes['btn--text']} onClick={()=>this.toggleHandler()}>Leave a message meow!</span>
+            <div className={classes['u-margin-bottom-medium']}>
+              <Input elementType={'textarea'} className={'home__input--textarea'}/>
+            </div>
 
-            <Input elementType={'textarea'} className={'home__input--textarea'}/>
+            <span className={classes['btn--text']}>Leave a message meow!</span>
+
+
 
           </div>
         </div>

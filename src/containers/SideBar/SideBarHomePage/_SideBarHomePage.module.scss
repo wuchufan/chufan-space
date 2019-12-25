@@ -11,23 +11,12 @@
   }
 
 
-  &__title{
-    // border-bottom:0.5rem solid $color-primary-light-1;
-  }
-
   &__title-span{
 
       line-height:1.2;
       display:block;
       text-transform: capitalize;
 
-
-
-    &--2{
-      font-size: 5rem;
-      color:rgba($color-primary-dark,0.8);
-
-    }
 
   }
 
