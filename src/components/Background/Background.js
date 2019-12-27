@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import BgCanvas from './BgCanvas/BgCanvas';
 import {circleConstructor} from './BgCanvas/Circle/Circle';
 
-
+//gives the number of circles
 const CIRCLE = circleConstructor(60);
 
 class Background extends Component{
